@@ -1,0 +1,10 @@
+structure,group,rows,seconds,rows_per_s,net_rows_per_s
+Bloom insert,sketch,300000,1.319,227452.0,295500.0
+Bloom query,sketch,130068,0.708,183757.0,225756.0
+CMS update (standard),sketch,430068,1.638,262596.0,357691.0
+CMS update (conservative),sketch,430068,2.289,187903.0,232046.0
+HLL add,sketch,430068,0.873,492662.0,982933.0
+set insert (exact),exact,300000,0.458,655576.0,1949501.0
+set query (exact),exact,130068,0.428,304091.0,439355.0
+dict count (exact),exact,430068,0.635,677226.0,2154303.0
+set distinct (exact),exact,430068,0.541,794661.0,4065476.0

@@ -1,0 +1,82 @@
+{
+ "dataset": {
+  "rows": 430068,
+  "total_clicks": 37100041,
+  "distinct_prev": 35485,
+  "distinct_curr": 258476,
+  "distinct_pairs": 430068,
+  "types": {
+   "external": 334300,
+   "link": 90162,
+   "other": 5606
+  },
+  "n_min": 10,
+  "n_median": 23.0,
+  "n_max": 1170638
+ },
+ "bloom_main": {
+  "m": 2875518,
+  "k": 7,
+  "n": 300000,
+  "queries": 130068,
+  "false_positives": 1320,
+  "fpr_empirical": 0.010148537687978595,
+  "fpr_theory": 0.010039209581758123,
+  "false_negatives": 0,
+  "bits_per_elem": 9.58506,
+  "bytes": 359440,
+  "fill_ratio": 0.518023883001254
+ },
+ "cms_main": {
+  "width": 8192,
+  "depth": 5,
+  "bytes": 163840,
+  "N": 37100041,
+  "eps_N": 12310.591709641789,
+  "underestimates": 0,
+  "rel_err_top100": 0.10050610426606374,
+  "rel_err_101_10000": 2.0341806033541157,
+  "rel_err_tail": 78.24458779939988,
+  "median_rel_err_tail": 57.32258064516129,
+  "mean_abs_err_all": 2059.784273975147,
+  "frac_err_le_epsN": 1.0,
+  "delta_theory": 0.006737946999085467,
+  "top100_precision_streaming": 0.98
+ },
+ "hll_main": {
+  "curr": {
+   "true": 258476,
+   "classic": 262095.15452473742,
+   "improved": 262129.68371008642,
+   "rel_err_classic": 0.01400189775738334,
+   "rel_err_improved": 0.014135485345201959
+  },
+  "prev": {
+   "true": 35485,
+   "classic": 35221.10593619537,
+   "improved": 35277.58397947144,
+   "rel_err_classic": -0.007436777900651919,
+   "rel_err_improved": -0.005845174595704068
+  },
+  "pair": {
+   "true": 430068,
+   "classic": 425266.6401957276,
+   "improved": 425322.66607178276,
+   "rel_err_classic": -0.011164187533767727,
+   "rel_err_improved": -0.011033915399930332
+  }
+ },
+ "exact_memory_bytes": {
+  "bloom": 36816489.0,
+  "cms": 26958811.0,
+  "hll": 26836395.0
+ },
+ "sketch_bytes": {
+  "bloom": 359440,
+  "cms": 163840,
+  "hll_1byte": 16384,
+  "hll_packed": 12288
+ },
+ "timing_parse_s": 0.4354115689999958,
+ "timing_hash_s": 0.7067678549999954
+}

@@ -1,0 +1,8 @@
+structure,kind,theoretical_bytes,tracemalloc_retained,tracemalloc_peak
+Bloom Filter,sketch,359440,360981.0,425587.0
+set of pairs (exact),exact,8388824,36816489.0,36854849.0
+Count-Min Sketch,sketch,163840,176344.0,240486.0
+dict of page counts (exact),exact,7689648,26958811.0,27005745.0
+HyperLogLog (1 byte/reg),sketch,16384,17125.0,81507.0
+"HyperLogLog (6-bit packed, theory)",sketch,12288,,
+set of pages (exact),exact,8388824,26836395.0,26883513.0
